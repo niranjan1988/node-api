@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":'node run app',
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "nodemon --exec 'mocha --recursive -R min'"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "express": "^4.17.1",
     "mocha": "^8.3.2",
     "mongoose": "^5.12.3",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
   }
 }
