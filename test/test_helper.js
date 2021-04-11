@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const Driver = mongoose.model('driver');
 
 before((done) => {
     mongoose.connect('mongodb://localhost/muber_test');

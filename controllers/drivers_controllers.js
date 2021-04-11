@@ -5,12 +5,10 @@ module.exports={
         res.send({"hi":"there"});
     },
 
-    create(req,res) {
+    create(req,res,next) {
         const body = req.body;
         Driver.create(body).then(driver=>{
             res.send(driver);
-        }).catch(err=>{
-            res
-        })
+        }).catch(next)
     }
 }
